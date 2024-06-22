@@ -49,7 +49,7 @@ import MapSelector from "~/components/Address/MapSelector.vue"
 import SuccessMessage from "~/components/Address/SuccessMessage.vue"
 
 // State of address form 0:addres 1:mapSelector 2:resault
-const state = ref(1)
+const state = ref(0)
 
 // Loading of send data
 const loading = ref(false)
