@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: /* IE6-8 */ url("@/assets/fonts/woff2/IRANSansXFaNum-Bold.woff2")
+      format("woff2");
+  }
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("@/assets/fonts/woff2/IRANSansXFaNum-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("@/assets/fonts/woff2/IRANSansXFaNum-Regular.woff2")
+      format("woff2");
+  }
+
+  html,
+  body {
+    font-family: "IRANsans", Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+    background: #f0f0f0;
+  }
+}
+.submit-form {
+  background: #45ccb9;
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.2rem;
+}
+
+.Toastify__toast {
+  font-family: "IRANsans", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.leaflet-container {
+  @apply sm:!h-80 !h-[100dvh] sm:static fixed top-0 left-0 z-0;
+}
