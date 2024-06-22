@@ -35,6 +35,7 @@
       <button
         class="submit-form mt-3 sm:static fixed bottom-0 left-0 !py-3 sm:rounded-sm rounded-none z-[1000000] flex justify-center"
         @click="addAddress"
+        v-if="state === 1"
       >
         <LoadingButton v-if="loading" class="w-10 h-6" />
         <span v-else> ثبت و ادامه </span>
